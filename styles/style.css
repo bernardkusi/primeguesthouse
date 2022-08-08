@@ -1,0 +1,649 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Nunito', sans-serif;
+}
+
+.click {
+  padding: .9rem 1.3rem;
+  font-size: 1.1rem;
+  border-radius: .3rem;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: transparent;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 400;
+  border: 1px solid #fff;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.click:hover {
+  background: #fff;
+  color: #d36301;
+}
+
+.center, .page, header nav .contact, header nav .contact ul, main #contact .contactflex form .click, footer .copy {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.page {
+  max-width: 1300px;
+  padding: 5rem 1rem 4.5rem;
+}
+
+.page .heading {
+  text-align: center;
+  font-size: 1.85rem;
+  color: #d36301;
+  padding: 1rem 0;
+}
+
+.slider {
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  z-index: 11;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-bottom: 7rem;
+  display: none;
+}
+
+.slider ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.slider ul a {
+  color: grey;
+  margin: 1rem 0;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.slider ul a:hover {
+  color: #d36301;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  padding: 1rem 3rem .3rem;
+  height: 75px;
+  width: 100%;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  z-index: 10;
+  -webkit-box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.177);
+          box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.177);
+  background: #fff;
+}
+
+header nav .logo {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.9rem;
+  color: #d36301;
+}
+
+header nav .contact {
+  position: absolute;
+  width: 94%;
+  background: #492607;
+  height: 2rem;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .contact ul {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
+
+header nav .contact ul a {
+  color: #fff !important;
+}
+
+header nav .contact ul a:hover {
+  color: #d36301 !important;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.5rem;
+}
+
+header nav ul a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.05rem;
+  color: gray;
+}
+
+header nav ul a:hover {
+  color: #d36301;
+}
+
+header .bars {
+  display: none;
+}
+
+main #home {
+  height: 80vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../luxury-classic-modern-bedroom-suite-hotel.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../luxury-classic-modern-bedroom-suite-hotel.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 7rem 3rem 0;
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+  overflow-x: hidden;
+}
+
+main #home .intro {
+  padding-top: calc(2rem + 8vh);
+  max-width: 700px;
+}
+
+main #home .intro h1 {
+  font-size: 3.95rem;
+  color: #fff;
+}
+
+main #home .intro h3 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 1rem 0;
+  color: #fe973c;
+}
+
+main #about .aboutflex {
+  width: 100%;
+  height: 30rem;
+  background: url("../visualsofdana-T5pL6ciEn-I-unsplash.jpg");
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #about .aboutflex .abouttext {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.863);
+  padding: .7rem 1.5rem;
+  color: #3e3e3e;
+  border-radius: .4rem;
+  font-size: 1.05rem;
+  width: 96%;
+  max-width: 750px;
+}
+
+main #rooms {
+  background: #efebe7;
+}
+
+main #rooms .roomgrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 250px;
+  gap: .7rem;
+  padding-top: 2rem;
+}
+
+main #rooms .roomgrid .room {
+  background: lightgray;
+  position: relative;
+  margin-top: 1.5rem;
+  overflow: hidden;
+}
+
+main #rooms .roomgrid .room img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
+}
+
+main #rooms .roomgrid .room .details {
+  position: absolute;
+  bottom: -100%;
+  padding: .5rem;
+  background: rgba(73, 38, 7, 0.529);
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+main #rooms .roomgrid .room .details .roomname {
+  font-size: .95rem;
+  color: #d36301;
+  font-weight: 500;
+}
+
+main #rooms .roomgrid .room .details .description {
+  font-size: .85rem;
+  color: #fff;
+  padding: .3rem 0;
+}
+
+main #rooms .roomgrid .room .details .price {
+  color: lightgray;
+}
+
+main #rooms .roomgrid .room:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+main #rooms .roomgrid .room:hover .details {
+  bottom: 0;
+}
+
+main #facilities .facilitiesgrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 320px;
+  margin: 3rem 0;
+}
+
+main #facilities .facilitiesgrid .facility {
+  background: lightgrey;
+  outline: 1px solid #fff;
+}
+
+main #facilities .facilitiesgrid .facility img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+main #reviews {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../pexels-suhel-vba-3659681.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../pexels-suhel-vba-3659681.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+main #reviews .page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #reviews .review {
+  background: rgba(255, 255, 255, 0.85);
+  padding: .8rem;
+  border-radius: .45rem;
+  max-width: 1000px;
+  margin-top: 1.8rem;
+}
+
+main #reviews .review .name {
+  color: #d36301;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+main #reviews .review .comment {
+  color: #3e3e3e;
+  padding: .6rem 0;
+  font-size: 1.1rem;
+}
+
+main #reviews .review .remark {
+  font-size: .9rem;
+  color: grey;
+  text-align: right;
+}
+
+main #contact {
+  overflow-x: hidden;
+}
+
+main #contact .contactflex {
+  width: 100%;
+  height: 30rem;
+  background: url("../room3.jpg");
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  margin: 3rem 0;
+}
+
+main #contact .contactflex form {
+  position: absolute;
+  bottom: 3rem;
+  right: 4rem;
+  padding: 1rem .5rem;
+  background: rgba(211, 99, 1, 0.8);
+  border-radius: .4rem;
+  width: 98%;
+  max-width: 470px;
+  margin-bottom: .5rem;
+}
+
+main #contact .contactflex form .label {
+  color: #fff;
+  font-size: 1.45rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  font-weight: 600;
+}
+
+main #contact .contactflex form .click {
+  margin-top: .7rem;
+  -webkit-transform: translateX(-50%) scale(0.85);
+          transform: translateX(-50%) scale(0.85);
+  cursor: pointer;
+}
+
+main #contact .contactflex form .control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+main #contact .contactflex form .control label {
+  display: block;
+  padding: .2rem 0;
+  color: lightgrey;
+}
+
+main #contact .contactflex form .control input, main #contact .contactflex form .control textarea {
+  width: 100%;
+  resize: none;
+  padding: .5rem .7rem;
+  border: none;
+  outline: none;
+  background: rgba(73, 38, 7, 0.3);
+  color: #fff;
+  border-radius: .2rem;
+}
+
+main #contact .contactflex form .control input:focus, main #contact .contactflex form .control textarea:focus {
+  border: 1px solid #fff;
+}
+
+main #contact .contactflex form .control textarea {
+  height: 4rem;
+}
+
+footer {
+  background: #120800;
+  padding: 4rem 2rem 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+footer .logo {
+  position: absolute;
+  left: calc(7vw + 3rem);
+  top: 2rem;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 2.2rem;
+  color: #d36301;
+}
+
+footer p {
+  color: #fff;
+  max-width: 650px;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .7rem;
+  padding: 1rem 3rem;
+}
+
+footer ul a {
+  color: #d36301;
+  text-decoration: none;
+}
+
+footer ul a:hover {
+  text-decoration: underline;
+}
+
+footer .copy {
+  font-size: .9rem;
+  position: absolute;
+  bottom: 1.7rem;
+  color: #fff;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+@media (max-width: 1050px) {
+  #rooms .roomgrid {
+    -ms-grid-columns: (1fr)[3] !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+@media (max-width: 960px) {
+  #facilities .facilitiesgrid {
+    -ms-grid-columns: (1fr)[2] !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 6rem calc(2rem  + 5vw) 6rem;
+  }
+  footer ul {
+    padding: 0;
+    margin: 1rem 0;
+  }
+}
+
+@media (max-width: 830px) {
+  #rooms .roomgrid {
+    -ms-grid-columns: (1fr)[2] !important;
+        grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 700px) {
+  #facilities .facilitiesgrid {
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .bars {
+    display: block !important;
+    width: 21px;
+    height: 17px;
+    position: fixed;
+    top: 3rem;
+    right: 2rem;
+    z-index: 12;
+  }
+  .bars .bar {
+    width: 100%;
+    height: 3px;
+    background: #d36301;
+    border-radius: 2px;
+    position: relative;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+  }
+  .bars .bar::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #d36301;
+    border-radius: 2px;
+    top: 6px;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+  }
+  .bars .bar::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #d36301;
+    border-radius: 2px;
+    top: 12px;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+  }
+  .bars.activ .bar {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  .bars.activ .bar::before {
+    display: none;
+  }
+  .bars.activ .bar::after {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    top: 0;
+  }
+  nav > ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 1.5rem;
+    gap: 0;
+    display: none !important;
+  }
+  nav > ul a {
+    margin-top: 1rem;
+  }
+  .slider.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 575px) {
+  #home {
+    padding: 6rem 1rem 0 !important;
+  }
+  #home .intro h1 {
+    font-size: 2.95rem !important;
+    color: #fff;
+  }
+  #home .intro h3 {
+    font-size: 1.25rem !important;
+    color: #fe973c;
+  }
+  #rooms .roomgrid {
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+  }
+  #contact form {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    right: auto !important;
+  }
+  footer {
+    padding: 6rem calc(1rem  + 5vw) 6rem;
+  }
+  footer .logo {
+    left: calc(7vw + 1rem);
+    top: 2rem;
+    font-size: 2rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
