@@ -262,7 +262,7 @@ main #rooms .roomgrid .room img {
 
 main #rooms .roomgrid .room .details {
   position: absolute;
-  bottom: -100%;
+  bottom: 0;
   padding: .5rem;
   background: rgba(73, 38, 7, 0.529);
   -webkit-transition: all .4s;
@@ -291,7 +291,7 @@ main #rooms .roomgrid .room:hover img {
 }
 
 main #rooms .roomgrid .room:hover .details {
-  bottom: 0;
+  bottom: -100%;
 }
 
 main #facilities .facilitiesgrid {
@@ -551,6 +551,8 @@ footer .copy {
     top: 3rem;
     right: 2rem;
     z-index: 12;
+    -webkit-transition: all .4s;
+    transition: all .4s;
   }
   .bars .bar {
     width: 100%;

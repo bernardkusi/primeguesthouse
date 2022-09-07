@@ -168,7 +168,7 @@ main{
 
                 .details{
                     position: absolute;
-                    bottom: -100%;
+                    bottom: 0;
                     padding: .5rem;
                     background: rgba(73, 38, 7, 0.529);
                     transition: all .4s;
@@ -195,7 +195,7 @@ main{
                         transform: scale(1.1);
                     }
                     .details{
-                        bottom: 0;
+                        bottom: -100%;
                     }
                 }
             }
