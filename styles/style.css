@@ -294,27 +294,40 @@ main #rooms .roomgrid .room:hover .details {
   bottom: -100%;
 }
 
-main #facilities .facilitiesgrid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 320px;
-  margin: 3rem 0;
+main #facilities {
+  padding-bottom: 4rem;
 }
 
-main #facilities .facilitiesgrid .facility {
-  background: lightgrey;
-  outline: 1px solid #fff;
+main #facilities .swiper {
+  width: 100%;
+  height: 200px;
 }
 
-main #facilities .facilitiesgrid .facility img {
+main #facilities .swiper .swiper-slide {
+  width: 100%;
+  max-width: 370px;
+}
+
+main #facilities .swiper .swiper-slide img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+}
+
+main #facilities .swiper .swiper-button-prev, main #facilities .swiper .swiper-button-next {
+  background: rgba(255, 255, 255, 0.656);
+  padding: .3rem;
+  color: #d36301;
+  font-size: 1rem;
+}
+
+main #facilities .swiper .swiper-button-prev::after, main #facilities .swiper .swiper-button-next::after {
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  font-weight: 800;
 }
 
 main #reviews {

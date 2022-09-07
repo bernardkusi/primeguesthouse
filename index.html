@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Document</title>
   </head>
@@ -176,27 +177,41 @@
       <div id="facilities">
         <div class="page">
           <h3 class="heading">Our Facilities</h3>
-
-          <div class="facilitiesgrid">
-            <div class="facility">
-              <img src="./bar.jpg" alt="image" />
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="./bar.jpg" alt="image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./gym.jpg" alt="image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./pool1.jpg" alt="image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./room2.jpg" alt="image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./laundry.jpg" alt="image" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./park.jpg" alt="image" />
+              </div>
+              ...
             </div>
-            <div class="facility">
-              <img src="./gym.jpg" alt="image" />
-            </div>
-            <div class="facility">
-              <img src="./pool1.jpg" alt="image" />
-            </div>
-            <div class="facility">
-              <img src="./room2.jpg" alt="image" />
-            </div>
-            <div class="facility">
-              <img src="./laundry.jpg" alt="image" />
-            </div>
-            <div class="facility">
-              <img src="./park.jpg" alt="image" />
-            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+            <!-- If we need scrollbar -->
+            <div class="swiper-scrollbar"></div>
           </div>
+
         </div>
       </div>
 
@@ -303,11 +318,37 @@
 
       <p class="copy">Copyright&copy;BernardDwumfour-2022</p>
 
+      <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
       <script src="./scripts/index.js"></script>
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script>
         AOS.init();
+        const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        slidesPerView: "auto",
+        centeredSlides: true,
+
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        
+
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+});
       </script>
+     
     </footer>
   </body>
 </html>
