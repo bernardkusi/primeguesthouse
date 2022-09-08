@@ -29,7 +29,7 @@
   color: #d36301;
 }
 
-.center, .page, header nav .contact, header nav .contact ul, main #contact .contactflex form .click, footer .copy {
+.center, .page, header nav .contact, header nav .contact ul, main #home form .click, main #contact .contactflex form .click, footer .copy, .cover form .click {
   position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -170,20 +170,85 @@ header .bars {
 }
 
 main #home {
-  height: 80vh;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url("../luxury-classic-modern-bedroom-suite-hotel.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../luxury-classic-modern-bedroom-suite-hotel.jpg");
   background-size: cover;
   background-position: center;
-  padding: 7rem 3rem 0;
   min-height: -webkit-fit-content;
   min-height: -moz-fit-content;
   min-height: fit-content;
   overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 7rem 3rem 2rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main #home form {
+  padding: 1rem .5rem;
+  background: rgba(211, 99, 1, 0.8);
+  border-radius: .4rem;
+  width: 50%;
+  max-width: 470px;
+  margin-bottom: .5rem;
+}
+
+main #home form .label {
+  color: #fff;
+  font-size: 1.45rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  font-weight: 600;
+}
+
+main #home form .click {
+  margin-top: .7rem;
+  -webkit-transform: translateX(-50%) scale(0.85);
+          transform: translateX(-50%) scale(0.85);
+  cursor: pointer;
+}
+
+main #home form .control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+main #home form .control label {
+  display: block;
+  padding: .2rem 0;
+  color: lightgrey;
+}
+
+main #home form .control input, main #home form .control textarea {
+  width: 100%;
+  resize: none;
+  padding: .5rem .7rem;
+  border: none;
+  outline: none;
+  background: rgba(73, 38, 7, 0.3);
+  color: #fff;
+  border-radius: .2rem;
+}
+
+main #home form .control input:focus, main #home form .control textarea:focus {
+  border: 1px solid #fff;
+}
+
+main #home form .control textarea {
+  height: 4rem;
 }
 
 main #home .intro {
   padding-top: calc(2rem + 8vh);
+  width: 55%;
   max-width: 700px;
 }
 
@@ -197,6 +262,10 @@ main #home .intro h3 {
   font-weight: 500;
   padding: 1rem 0;
   color: #fe973c;
+}
+
+main #home .intro .coverbutton {
+  display: none;
 }
 
 main #about .aboutflex {
@@ -513,6 +582,97 @@ footer .copy {
   width: max-content;
 }
 
+.cover {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 13;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+  padding: 1rem;
+}
+
+.cover .closebutton {
+  position: absolute;
+  width: 23px;
+  height: 20px;
+  inset: 4rem 2rem auto auto;
+}
+
+.cover .closebutton i {
+  color: #d36301;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.cover form {
+  padding: 1rem .5rem;
+  background: rgba(211, 99, 1, 0.8);
+  border-radius: .4rem;
+  width: 100%;
+  max-width: 470px;
+  margin-bottom: .5rem;
+}
+
+.cover form .label {
+  color: #fff;
+  font-size: 1.45rem;
+  text-align: center;
+  padding-bottom: 1rem;
+  font-weight: 600;
+}
+
+.cover form .click {
+  margin-top: .7rem;
+  -webkit-transform: translateX(-50%) scale(0.85);
+          transform: translateX(-50%) scale(0.85);
+  cursor: pointer;
+}
+
+.cover form .control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.cover form .control label {
+  display: block;
+  padding: .2rem 0;
+  color: lightgrey;
+}
+
+.cover form .control input, .cover form .control textarea {
+  width: 100%;
+  resize: none;
+  padding: .5rem .7rem;
+  border: none;
+  outline: none;
+  background: rgba(73, 38, 7, 0.3);
+  color: #fff;
+  border-radius: .2rem;
+}
+
+.cover form .control input:focus, .cover form .control textarea:focus {
+  border: 1px solid #fff;
+}
+
+.cover form .control textarea {
+  height: 4rem;
+}
+
 @media (max-width: 1050px) {
   #rooms .roomgrid {
     -ms-grid-columns: (1fr)[3] !important;
@@ -521,6 +681,25 @@ footer .copy {
 }
 
 @media (max-width: 960px) {
+  #home {
+    display: block !important;
+    min-height: 75vh !important;
+  }
+  #home form {
+    display: none;
+  }
+  #home .intro {
+    width: 100% !important;
+  }
+  .cover.show {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .coverbutton {
+    display: inline-block !important;
+    text-align: center;
+  }
   #facilities .facilitiesgrid {
     -ms-grid-columns: (1fr)[2] !important;
         grid-template-columns: repeat(2, 1fr) !important;

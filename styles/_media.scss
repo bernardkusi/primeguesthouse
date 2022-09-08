@@ -9,6 +9,35 @@
 }
 
 @media (max-width:960px) {
+
+    //django
+    #home{
+        display: block !important;
+        min-height: 75vh !important;
+        form{
+            display: none;
+        }
+
+        .intro{
+            width: 100% !important;
+        }
+    }
+
+    .cover{
+        &.show{
+
+            display: flex;
+        }
+    }
+    
+            //django
+            .coverbutton{
+                display: inline-block !important;
+                text-align: center;
+            }
+            //django
+    //django
+
     #facilities{
         .facilitiesgrid{
             grid-template-columns: repeat(2,1fr) !important;
